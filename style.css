@@ -1,0 +1,127 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Lexend Deca";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    min-height: 100vh;
+    color:  hsl(0, 0%, 95%);
+}
+
+.container {
+    width: 65.9%;
+    background-color:  hsl(0, 0%, 95%);
+    padding: 4rem;
+}
+
+.card__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    min-height: 25rem;
+}
+
+.card__img {
+    margin-bottom: 1.5rem;
+    display: block;
+    height: 2rem;
+    width: 3rem;
+}
+
+.card--1 {
+    background-color:  hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card--2 .btn:link,.card--1 .btn:visited {
+    color: hsl(31, 77%, 52%) ;
+}
+
+.card--2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--2 .btn:link,.card--2 .btn:visited {
+    color: hsl(184, 100%, 22%) ;
+}
+
+.card--3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card--3 .btn:link,.card--3 .btn:visited {
+    color: hsl(179, 100%, 13%);
+}
+
+.card__head {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-family: 'Big Shoulders Display';
+}
+
+.btn:link, .btn:visited {
+    text-decoration: none;
+    color: currentColor;
+    /* margin-top: 5rem; */
+    padding: .5rem 1rem;
+    background-color: white;
+    border-radius: 50px;
+    margin: auto 0 0;
+    text-transform: capitalize;
+    align-self: flex-start;
+}
+
+/* this is where i would put my media query */
+
+@media (max-width: 400px){
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+    }
+
+    .card__container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width : 400px) and (max-width: 900px) {
+    .html {
+        font-size: 50%;
+    }
+    .container {
+        width: 70%;
+        height: 70%;
+        padding: 2rem;
+    }
+    .card__container {
+        width: 100%;
+    }
+}
